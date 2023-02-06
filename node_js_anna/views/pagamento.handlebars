@@ -1,0 +1,23 @@
+<style>
+body{
+    background-color: black;
+    color:white;
+}
+
+</style>
+
+<h1>Listar Pagamentos</h1>
+
+ 
+{{#each pagamentos}}
+    Id: {{dataValues.id}}<br>
+    Nome: {{dataValues.nome}}<br>
+    Valor: {{dataValues.valor}}<br>
+    Cadastro:{{dataValues.createdAt}}<br>
+    <a href="/del-pagamento/{{dataValues.id}}"><button>Apagar</button></a>
+    <hr>
+
+{{/each}}
+
+
+
